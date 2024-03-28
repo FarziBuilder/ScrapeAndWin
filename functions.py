@@ -4,6 +4,7 @@ import re
 from openai import OpenAI
 
 
+
 def get_video_id_from_url(url):
     video_id = None
     pattern = re.compile(r"(?:https?:\/\/)?(?:www\.)?youtu(?:\.be\/|be\.com\/watch\?v=)([\w\-]+)")

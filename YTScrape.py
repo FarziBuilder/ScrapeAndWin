@@ -6,8 +6,8 @@ from openpyxl import load_workbook
 wb = load_workbook('example.xlsx')
 ws = wb["Sheet1"]
 
-total = 25
-iter_num = 15
+total = 5
+iter_num = 0
 
 params = {
   "q": "mit maker portfolio",
