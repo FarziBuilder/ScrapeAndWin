@@ -2,6 +2,11 @@ import serpapi
 from googlesearch import *
 from functions import *
 from openpyxl import load_workbook
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+openai_api_key = os.getenv('OPENAI_API_KEY')
 
 wb = load_workbook('example.xlsx')
 ws = wb["Sheet1"]
@@ -14,7 +19,7 @@ params = {
   "engine": "google_videos",
   "hl": "en",
   "gl": "us",
-  "api_key": "",
+  "api_key": openai_api_key,
   "num": total
 }
 
