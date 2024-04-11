@@ -1,0 +1,7 @@
+openai
+python-dotenv
+youtube_transcript_api
+googlesearch-python
+google-search-results
+openpyxl
+serpapi
